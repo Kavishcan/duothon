@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 
 function Welcome() {
   return (
@@ -24,7 +24,7 @@ function Welcome() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
-export default Welcome
+export default Welcome;

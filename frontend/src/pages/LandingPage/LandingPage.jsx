@@ -1,3 +1,5 @@
+import Map from "./Map";
+import styles from "./LandingPage.module.css";
 
 import UserDetailsCard from './UserDetailsCard';
 
@@ -9,4 +11,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default AppLayout;
