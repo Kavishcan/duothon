@@ -74,10 +74,10 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<LandingPage/>} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/addUser" element={<AddUser/>} />
+          <Route path="/addUser" element={<AddUser />} />
           <Route path="/updateUser" element={<UpdateUser />} />
         </Routes>
       </Router>

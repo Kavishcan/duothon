@@ -1,16 +1,14 @@
+import Map from "./Map";
+import styles from "./LandingPage.module.css";
 
-import MapView from './MapView';
 import UserDetailsCard from './UserDetailsCard';
-import UserDetails from './userDetails';
 
 function LandingPage() {
   return (
     <div>
-      <MapView/>
-      <UserDetails/>
-
+      <UserDetailsCard/>
     </div>
   );
 }
 
-export default LandingPage;
+export default AppLayout;
