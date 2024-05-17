@@ -8,7 +8,7 @@ import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
 const Navbar = () => {
   const { login, register, logout } = useKindeAuth();
   const { user } = useKindeAuth();
-  const isAdmin = user?.email === "kavishcanvsk@gmail.com";
+  const isAdmin = user?.email === "manudiathmaja54@gmail.com";
   console.log(isAdmin);
   return (
     <nav className="p-3 flex items-center justify-between">
