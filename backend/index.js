@@ -4,8 +4,6 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 require("dotenv").config();
 
-// const router = require("./router/route.js");
-
 /** import connection file */
 const connect = require("./database/conn.js");
 
@@ -21,7 +19,7 @@ app.use(bodyParser.json());
 const port = process.env.PORT || 8080;
 
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "");
+  res.header("Access-Control-Allow-Origin", "http://localhost:8000");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept, Authorization"
@@ -32,6 +30,8 @@ app.use((req, res, next) => {
   }
   next();
 });
+
+app.use("/api", require("./routes/userRoutes"));
 
 /** start server only when we have valid connection */
 connect()

@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 // Import your user controller or handlers here
-const userController = require("./userController");
+const userController = require("../controllers/userController");
 
 // POST: Create a new user
 router.post("/user", userController.createUser);
