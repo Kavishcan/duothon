@@ -30,7 +30,7 @@ function AdminInformation() {
         <Table className="mt-6">
           <TableCaption>A list of your users.</TableCaption>
           <TableHeader>
-            <TableRow>
+            <TableRow className="bg-slate-300">
               <TableHead className="w-[100px]">Ad Code</TableHead>
               <TableHead>User Name</TableHead>
               <TableHead>First Name</TableHead>
