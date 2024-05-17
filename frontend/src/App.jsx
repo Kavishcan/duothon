@@ -8,6 +8,9 @@ import Welcome from "./pages/Welcome/Welcome";
 import { Button } from "@/components/ui/button";
 import { KindeProvider } from "@kinde-oss/kinde-auth-react";
 import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
+import Welcome from "./pages/Welcome/Welcome";
+import UpdateUser from "./pages/UpdateUser/UpdateUser";
+import AddUser from "./pages/AddUser/AddUser";
 
 const Navbar = () => {
   const { login, register, logout } = useKindeAuth();
@@ -44,7 +47,7 @@ const Navbar = () => {
           )}
         </li>
       </ul>
-      <div className="gap-10">
+      <div className="gap-10 flex space-x-4">
         {!user && (
           <Button variant="default" onClick={register} type="button">
             Sign up
