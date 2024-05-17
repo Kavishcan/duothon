@@ -37,7 +37,7 @@ function PaymentInformation() {
           </TableHeader>
           <TableBody>
             {paymentInfo.map((info) => (
-              <TableRow key={info.dtpCode}>
+              <TableRow key={info.dtpCode}  className="bg-slate-300">
                 <TableCell className="font-medium">{info.dtpCode}</TableCell>
                 <TableCell>{info.userName}</TableCell>
                 <TableCell>{info.paymentValue}</TableCell>
