@@ -1,12 +1,5 @@
-import Map from "./Map";
-import styles from "./LandingPage.module.css";
-
-function AppLayout() {
-  return (
-    <div className={styles.app}>
-      <Map />
-    </div>
-  );
+function LandingPage() {
+  return <div></div>;
 }
 
-export default AppLayout;
+export default LandingPage;
