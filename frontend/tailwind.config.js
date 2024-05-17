@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        'neotropolis': "url('/public/im_01.png')", 
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
