@@ -1,9 +1,11 @@
-// Dashboard.jsx
+import PaymentInformation from "./PaymentInformation"
+import UserInformation from "./UserInformation"
 
 function Dashboard() {
   return (
     <div>
-      <h1>Welcome to the Dashboard!</h1>
+      <UserInformation />
+      <PaymentInformation />
     </div>
   )
 }
