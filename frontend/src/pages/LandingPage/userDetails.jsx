@@ -1,17 +1,20 @@
-import UserDetailsCard from './UserDetailsCard';
+import { Separator } from "@/components/ui/separator"
 
-function UserDetails() {
+function userDetails() {
+  const user = {
+    name: "John Doe",
+    email: "john.doe@example.com",
+    address: "123 Main St, Anytown, USA",
+  }
   return (
-    <div className=" justify-around items-center mx-auto max-w-4xl mb-8 p-8 grid grid-cols-2 gap-1">
-    <div className="bg-slate-500 w-72 h-56 flex items-center justify-center text-white rounded">
+    <div>
+      <div className="space-y-1">
+        <h4 className="text-sm font-medium leading-none">John Doe</h4>
+        <p className="text-sm text-muted-foreground">johndoe@gmail.com</p>
+      </div>
+      <Separator className="my-4" />
     </div>
-    <div className="ml-8">
-      <h1 className="text-xl font-bold mb-2">User Details</h1>
-    </div>
-  </div>
-  
-  
-  );
+  )
 }
 
-export default UserDetails;
+export default userDetails

@@ -1,5 +1,3 @@
-import UserDetailsCard from './UserDetailsCard';
-
 function MapView() {
   return (
     <div className=" justify-around mx-auto max-w-4xl mb-8 p-8">
@@ -11,7 +9,7 @@ function MapView() {
         <h1> Map view</h1>
       </div>
     </div>
-  );
+  )
 }
 
-export default MapView;
+export default MapView

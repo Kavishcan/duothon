@@ -1,19 +1,19 @@
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import LandingPage from "./pages/LandingPage/LandingPage";
-import Dashboard from "./pages/Dashboard/Dashboard";
-import AddUser from "./pages/AddUser/AddUser";
-import UpdateUser from "./pages/UpdateUser/UpdateUser";
-import Welcome from "./pages/Welcome/Welcome";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"
+import LandingPage from "./pages/LandingPage/LandingPage"
+import Dashboard from "./pages/Dashboard/Dashboard"
+import AddUser from "./pages/AddUser/AddUser"
+import UpdateUser from "./pages/UpdateUser/UpdateUser"
+import Welcome from "./pages/Welcome/Welcome"
 
-import { Button } from "@/components/ui/button";
-import { KindeProvider } from "@kinde-oss/kinde-auth-react";
-import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
+import { Button } from "@/components/ui/button"
+import { KindeProvider } from "@kinde-oss/kinde-auth-react"
+import { useKindeAuth } from "@kinde-oss/kinde-auth-react"
 
 const Navbar = () => {
-  const { login, register, logout } = useKindeAuth();
-  const { user } = useKindeAuth();
-  const isAdmin = user?.email === "kavishcanvsk@gmail.com";
-  console.log(isAdmin);
+  const { login, register, logout } = useKindeAuth()
+  const { user } = useKindeAuth()
+  const isAdmin = user?.email === "kavishcanvsk@gmail.com"
+  console.log(isAdmin)
   return (
     <nav className="p-3 flex items-center justify-between">
       <img src="/logo.png" alt="Logo" className="h-12 mr-4 ml-6" />{" "}
@@ -44,7 +44,7 @@ const Navbar = () => {
           )}
         </li>
       </ul>
-      <div className="gap-10 flex space-x-4">
+      <div className=" flex space-x-4">
         {!user && (
           <Button variant="default" onClick={register} type="button">
             Sign up
@@ -61,8 +61,8 @@ const Navbar = () => {
         )}
       </div>
     </nav>
-  );
-};
+  )
+}
 
 function App() {
   return (
@@ -83,7 +83,7 @@ function App() {
         </Routes>
       </Router>
     </KindeProvider>
-  );
+  )
 }
 
-export default App;
+export default App
