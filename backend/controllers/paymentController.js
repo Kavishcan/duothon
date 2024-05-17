@@ -1,4 +1,4 @@
-const Payment = require("../models/Payment");
+const Payment = require("../models/paymentSchema");
 
 // Create a new payment
 exports.createPayment = async (req, res) => {
@@ -23,5 +23,3 @@ exports.getPayment = async (req, res) => {
     res.status(500).send(error);
   }
 };
-
-module.exports = router;
