@@ -7,7 +7,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table"
+} from "@/components/ui/table";
 
 const users = [
   {
@@ -20,7 +20,7 @@ const users = [
     status: "Active",
   },
   // Add more users as needed...
-]
+];
 
 function UserInformation() {
   return (
@@ -30,7 +30,7 @@ function UserInformation() {
         <Table className="mt-6">
           <TableCaption>A list of your users.</TableCaption>
           <TableHeader>
-            <TableRow  className="bg-slate-300">
+            <TableRow className="bg-slate-300">
               <TableHead className="w-[100px]">DTP Code</TableHead>
               <TableHead>User Name</TableHead>
               <TableHead>First Name</TableHead>
@@ -60,7 +60,7 @@ function UserInformation() {
         </Table>
       </div>
     </div>
-  )
+  );
 }
 
-export default UserInformation
+export default UserInformation;

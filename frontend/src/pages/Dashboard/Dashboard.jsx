@@ -1,8 +1,8 @@
-import PaymentInformation from './PaymentInformation';
-import UserInformation from './UserInformation';
-import SystemInformation from './SystemInformation';
-import AdminInformation from './AdminInformation';
-import AdminBox from './AdminBox';
+import PaymentInformation from "./PaymentInformation";
+import UserInformation from "./UserInformation";
+import SystemInformation from "./SystemInformation";
+import AdminInformation from "./AdminInformation";
+import AdminBox from "./AdminBox";
 
 function Dashboard() {
   return (

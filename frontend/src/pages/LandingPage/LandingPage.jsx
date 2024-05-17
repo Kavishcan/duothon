@@ -1,5 +1,13 @@
+import MapView from "./MapView";
+import UserDetails from "./userDetails";
+
 function LandingPage() {
-  return <div></div>;
+  return (
+    <>
+      <MapView />
+      <UserDetails />
+    </>
+  );
 }
 
 export default LandingPage;
