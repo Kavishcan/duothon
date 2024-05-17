@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 function Welcome() {
   return (
     <div>
-      <main className="flex items-center justify-center h-[80vh]">
+      <main className="flex items-center justify-center h-screen bg-neotropolis bg-cover bg-center">
         <div className="text-center">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">
             Welcome to Neotropolis!
