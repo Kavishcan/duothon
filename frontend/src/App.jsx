@@ -1,15 +1,18 @@
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import LandingPage from "./pages/LandingPage/LandingPage";
-import Dashboard from "./pages/Dashboard/Dashboard";
-import { Button } from "@/components/ui/button";
-import { KindeProvider } from "@kinde-oss/kinde-auth-react";
-import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"
+import LandingPage from "./pages/LandingPage/LandingPage"
+import Dashboard from "./pages/Dashboard/Dashboard"
+import { Button } from "@/components/ui/button"
+import { KindeProvider } from "@kinde-oss/kinde-auth-react"
+import { useKindeAuth } from "@kinde-oss/kinde-auth-react"
+import Welcome from "./pages/Welcome/Welcome"
+import AddUser from "./pages/AddUser/AddUser"
+import UpdateUser from "./pages/UpdateUser/UpdateUser"
 
 const Navbar = () => {
-  const { login, register, logout } = useKindeAuth();
-  const { user } = useKindeAuth();
-  const isAdmin = user?.email === "kavishcanvsk@gmail.com";
-  console.log(isAdmin);
+  const { login, register, logout } = useKindeAuth()
+  const { user } = useKindeAuth()
+  const isAdmin = user?.email === "kavishcanvsk@gmail.com"
+  console.log(isAdmin)
   return (
     <nav className="p-3 flex items-center justify-between">
       <img src="/logo.png" alt="Logo" className="h-12 mr-4 ml-6" />{" "}
@@ -57,8 +60,8 @@ const Navbar = () => {
         )}
       </div>
     </nav>
-  );
-};
+  )
+}
 
 function App() {
   return (
@@ -79,7 +82,7 @@ function App() {
         </Routes>
       </Router>
     </KindeProvider>
-  );
+  )
 }
 
-export default App;
+export default App
