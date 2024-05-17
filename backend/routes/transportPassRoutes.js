@@ -1,12 +1,17 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
+const transportPassController = require('../controllers/transportPassController');
 
-const transportPassController = require("../controllers/transportPassController");
-
-// Issue a new transport pass
-router.post("/transport/issue", transportPassController.getTransportPass);
+// Create a new transport pass
+router.post('/issue', transportPassController.createTransportPass);
 
 // Get transport pass by ID
-router.get("/transport/:id", transportPassController.getTransportPassById);
+router.get('/:id', transportPassController.getTransportPassById);
+
+// Update a transport pass by ID
+router.patch('/:id', transportPassController.updateTransportPassById);
+
+// Delete a transport pass by ID
+router.delete('/:id', transportPassController.deleteTransportPassById);
 
 module.exports = router;
