@@ -32,6 +32,9 @@ app.use((req, res, next) => {
 });
 
 app.use("/api", require("./routes/userRoutes"));
+app.use("/api", require("./routes/transportPassRoutes"));
+app.use("/api", require("./routes/publicTransportRoutes"));
+app.use("/api", require("./routes/paymentRoutes"));
 
 /** start server only when we have valid connection */
 connect()
