@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import AddUser from "./pages/AddUser/AddUser";
+import UpdateUser from "./pages/UpdateUser/UpdateUser";
 import { Button } from "@/components/ui/button";
 import { KindeProvider } from "@kinde-oss/kinde-auth-react";
 import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
@@ -66,6 +68,8 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/addUser" element={<AddUser />} />
+          <Route path="/updateUser" element={<UpdateUser />} />
         </Routes>
       </Router>
     </KindeProvider>
