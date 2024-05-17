@@ -1,13 +1,14 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"
 import LandingPage from "./pages/LandingPage/LandingPage"
 import Dashboard from "./pages/Dashboard/Dashboard"
+import { Button } from "@/components/ui/button"
 
 const Navbar = () => {
   return (
-    <nav className=" p-3 flex items-center">
+    <nav className="p-3 flex items-center justify-between">
       <img src="/logo.png" alt="Logo" className="h-12 mr-4 ml-6" />{" "}
       {/* adjust size as needed */}
-      <ul className="flex justify-around text-slate-600 text-lg">
+      <ul className="flex justify-center space-x-4 text-slate-600 text-m">
         <li>
           <Link to="/" className="hover:text-gray-200 transition duration-200">
             Home
@@ -22,6 +23,7 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      <Button variant="default">Sign In</Button>
     </nav>
   )
 }
