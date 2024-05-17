@@ -1,8 +1,6 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Dashboard from "./pages/Dashboard/Dashboard";
-import AddUser from "./pages/AddUser/AddUser";
-import UpdateUser from "./pages/UpdateUser/UpdateUser";
 import { Button } from "@/components/ui/button";
 import { KindeProvider } from "@kinde-oss/kinde-auth-react";
 import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
@@ -15,8 +13,15 @@ const Navbar = () => {
   return (
     <nav className="p-3 flex items-center justify-between">
       <img src="/logo.png" alt="Logo" className="h-12 mr-4 ml-6" />{" "}
-      {/* adjust size as needed */}
       <ul className="flex justify-center space-x-4 text-slate-600 text-m">
+        <li>
+          <Link
+            to="/welcome"
+            className="hover:text-gray-200 transition duration-200"
+          >
+            Welcome
+          </Link>
+        </li>
         <li>
           <Link to="/" className="hover:text-gray-200 transition duration-200">
             Home
@@ -67,6 +72,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/welcome" element={<Welcome />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/addUser" element={<AddUser />} />
           <Route path="/updateUser" element={<UpdateUser />} />
