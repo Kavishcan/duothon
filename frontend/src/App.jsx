@@ -4,6 +4,9 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import { Button } from "@/components/ui/button";
 import { KindeProvider } from "@kinde-oss/kinde-auth-react";
 import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
+import Welcome from "./pages/Welcome/Welcome";
+import UpdateUser from "./pages/UpdateUser/UpdateUser";
+import AddUser from "./pages/AddUser/AddUser";
 
 const Navbar = () => {
   const { login, register, logout } = useKindeAuth();
@@ -71,10 +74,10 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={<LandingPage/>} />
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/addUser" element={<AddUser />} />
+          <Route path="/addUser" element={<AddUser/>} />
           <Route path="/updateUser" element={<UpdateUser />} />
         </Routes>
       </Router>

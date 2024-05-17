@@ -1,10 +1,14 @@
 
+import MapView from './MapView';
 import UserDetailsCard from './UserDetailsCard';
+import UserDetails from './userDetails';
 
 function LandingPage() {
   return (
     <div>
-      <UserDetailsCard/>
+      <MapView/>
+      <UserDetails/>
+
     </div>
   );
 }
