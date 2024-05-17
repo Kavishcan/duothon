@@ -1,11 +1,12 @@
-// LandingPage.jsx
+
+import UserDetailsCard from './UserDetailsCard';
 
 function LandingPage() {
   return (
     <div>
-      <h1>Welcome to the Landing Page!</h1>
+      <UserDetailsCard/>
     </div>
-  )
+  );
 }
 
-export default LandingPage
+export default LandingPage;
