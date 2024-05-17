@@ -7,20 +7,20 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table"
+} from "@/components/ui/table";
 
 const users = [
   {
     dtpCode: "DTP001",
-    userName: "User1",
-    firstName: "John",
-    lastName: "Doe",
-    mobile: "1234567890",
-    email: "john.doe@example.com",
+    userName: "Kavishcan",
+    firstName: "Kavishcan ",
+    lastName: "Veerasaravanan",
+    mobile: "0766684337",
+    email: "kavishcan2002@gmail.com",
     status: "Active",
   },
   // Add more users as needed...
-]
+];
 
 function AdminInformation() {
   return (
@@ -60,7 +60,7 @@ function AdminInformation() {
         </Table>
       </div>
     </div>
-  )
+  );
 }
 
-export default AdminInformation
+export default AdminInformation;

@@ -1,7 +1,7 @@
-import MapView from "./MapView"
-import UserPic from "./UserPic"
-import UserDetails from "./UserDetails"
-import TabsDemo from "./TabsDemo"
+import MapView from "./MapView";
+import UserPic from "./UserPic";
+import UserDetails from "./userDetails";
+import TabsDemo from "./TabsDemo";
 
 function LandingPage() {
   return (
@@ -14,7 +14,7 @@ function LandingPage() {
         <TabsDemo />
       </div>
     </>
-  )
+  );
 }
 
-export default LandingPage
+export default LandingPage;

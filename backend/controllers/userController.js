@@ -2,8 +2,21 @@ const User = require("../models/userSchema"); // Import your User model
 
 // Create a new user
 exports.createUser = async (req, res) => {
-  const user = new User(req.body);
+  const { name, email, password, isAdmin } = req.body;
+
+  // Create a new user object with the provided data
+  const user = new User({
+    name,
+    email,
+    password,
+    isAdmin,
+  });
+
+  console.log("User datadfsdfsdf:", user);
+  // Save the user to the database
   await user.save();
+
+  // Send the created user back in the response
   res.status(201).send(user);
 };
 
@@ -29,4 +42,12 @@ exports.deleteUserById = async (req, res) => {
   const user = await User.findByIdAndDelete(req.params.id);
   if (!user) return res.status(404).send();
   res.send(user);
+};
+
+// GET: Retrieve all users
+exports.getAllUsers = async (req, res) => {
+  const users = await User.find();
+  console.log("Users:", users);
+
+  res.send(users);
 };

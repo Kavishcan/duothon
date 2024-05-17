@@ -1,11 +1,11 @@
-import { Separator } from "@/components/ui/separator"
+import { Separator } from "@/components/ui/separator";
 
-function userDetails() {
+function UserDetails() {
   const user = {
     name: "John Doe",
     email: "john.doe@example.com",
     address: "123 Main St, Anytown, USA",
-  }
+  };
   return (
     <div>
       <div className="space-y-1">
@@ -14,7 +14,7 @@ function userDetails() {
       </div>
       <Separator className="my-4" />
     </div>
-  )
+  );
 }
 
-export default userDetails
+export default UserDetails;

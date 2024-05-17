@@ -20,10 +20,35 @@ const AddUser = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const userData = {
+      name: formData.firstName + " " + formData.lastName,
+      email: formData.email,
+      password: formData.password,
+      isAdmin: false,
+    };
+
+    console.log("User data:", userData);
     // Handle form submission logic here
-    console.log("Form data:", formData);
+    try {
+      const response = await fetch("http://localhost:8080/api/user", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userData),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const user = await response.json();
+      console.log("User created successfully:", user);
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
 
   return (
