@@ -3,8 +3,9 @@ import { Button } from "@/components/ui/button";
 function Welcome() {
   return (
     <div>
-      <main className="flex items-center justify-center h-screen bg-neotropolis bg-cover bg-center">
-        <div className="text-center">
+      <main className="flex items-center justify-center h-screen bg-neotropolis bg-cover bg-center relative">
+        <div className="absolute top-44		">
+             <div className="text-center ">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">
             Welcome to Neotropolis!
           </h1>
@@ -16,6 +17,8 @@ function Welcome() {
             Get Started
           </Button>
         </div>
+        </div>
+     
       </main>
 
       <footer className="p-6 bg-white shadow">
