@@ -43,7 +43,7 @@ const Navbar = () => {
           )}
         </li>
       </ul>
-      <div className="gap-10">
+      <div className="gap-10 flex space-x-4">
         {!user && (
           <Button variant="default" onClick={register} type="button">
             Sign up
