@@ -1,13 +1,9 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Dashboard from "./pages/Dashboard/Dashboard";
-import Welcome from "./pages/Welcome/Welcome";
-import AddUser from "./pages/AddUser/AddUser";
-import UpdateUser from "./pages/UpdateUser/UpdateUser";
 import { Button } from "@/components/ui/button";
 import { KindeProvider } from "@kinde-oss/kinde-auth-react";
 import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
-import { CitiesProvider } from "./pages/LandingPage/contexts/CitiesContext";
 
 const Navbar = () => {
   const { login, register, logout } = useKindeAuth();
