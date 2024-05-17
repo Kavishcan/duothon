@@ -48,7 +48,7 @@ function TabsDemo() {
         </TabsContent>
         <TabsContent value="topup">
           {" "}
-          Ammount
+          Amount
           <Input />
           <Button className="mt-3"> Proceed to pay</Button>
         </TabsContent>
